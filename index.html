@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Integralna teorija razvoja jezikov – drugačen pogled na jezikovne korenine, stike, glasovne spremembe in zgodovinski razvoj jezikov.">
+<title>Integralna teorija razvoja jezikov</title>
+
+<style>
+:root {
+    --dark: #24352f;
+    --green: #526f5c;
+    --gold: #b18b4b;
+    --cream: #f7f5ef;
+    --text: #303630;
+    --light: #e9e8df;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    background: var(--cream);
+    color: var(--text);
+    line-height: 1.7;
+}
+
+header {
+    background: var(--dark);
+    color: white;
+    padding: 18px 5%;
+}
+
+.header-inner {
+    max-width: 1150px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.site-name {
+    font-size: 1.15rem;
+    letter-spacing: 0.04em;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+nav a {
+    color: #f4f0e5;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+nav a:hover {
+    color: #e4c58b;
+}
+
+.hero {
+    background: linear-gradient(135deg, #344b40, #617764);
+    color: white;
+    padding: 95px 20px 85px;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 900px;
+    margin: auto;
+}
+
+.hero h1 {
+    font-size: clamp(2.1rem, 5vw, 3.6rem);
+    line-height: 1.2;
+    margin: 0 0 18px;
+    font-weight: normal;
+}
+
+.subtitle {
+    color: #e4d4b2;
+    font-size: 1.25rem;
+    margin-bottom: 38px;
+}
+
+.hero-question {
+    font-size: 1.35rem;
+    max-width: 780px;
+    margin: 0 auto 28px;
+}
+
+.hero p {
+    max-width: 780px;
+    margin: 0 auto 18px;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 22px;
+    padding: 11px 25px;
+    background: var(--gold);
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.button:hover {
+    background: #98743b;
+}
+
+main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px 25px 70px;
+}
+
+section {
+    padding: 65px 0 45px;
+    border-bottom: 1px solid #d9d7cc;
+    scroll-margin-top: 30px;
+}
+
+h2 {
+    color: var(--dark);
+    font-size: 2rem;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+h3 {
+    color: var(--green);
+    font-size: 1.3rem;
+    font-weight: normal;
+    margin-top: 30px;
+}
+
+p {
+    margin: 0 0 18px;
+}
+
+ul {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.highlight {
+    border-left: 4px solid var(--gold);
+    padding: 18px 25px;
+    margin: 30px 0;
+    background: #eeece3;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+    margin-top: 30px;
+}
+
+.card {
+    background: #eeece3;
+    padding: 22px;
+    border-top: 3px solid var(--green);
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.book-box {
+    background: #eeece3;
+    padding: 28px;
+    margin-top: 25px;
+    border-left: 4px solid var(--gold);
+}
+
+a {
+    color: #496b55;
+}
+
+footer {
+    background: var(--dark);
+    color: #e9e8df;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #e4c58b;
+}
+
+@media (max-width: 650px) {
+    .header-inner {
+        display: block;
+    }
+
+    nav {
+        margin-top: 15px;
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 0.88rem;
+    }
+
+    .hero {
+        padding: 65px 20px;
+    }
+
+    main {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="header-inner">
+        <div class="site-name">INTEGRALNA TEORIJA RAZVOJA JEZIKOV</div>
+        <nav>
+            <a href="#uvod">Uvod</a>
+            <a href="#hipoteza">Izhodiščna hipoteza</a>
+            <a href="#model">Model</a>
+            <a href="#metodologija">Metodologija</a>
+            <a href="#primerjave">Primerjave</a>
+            <a href="#knjiga">Knjiga</a>
+        </nav>
+    </div>
+</header>
+
+<div class="hero">
+    <div class="hero-content">
+        <h1>Integralna teorija razvoja jezikov</h1>
+        <div class="subtitle">Integral Theory of Language Development</div>
+
+        <div class="hero-question">
+            Ali lahko zgodovino evropskih in drugih starih jezikov razumemo tudi drugače kot skozi model enotnega praindoevropskega prajezika?
+        </div>
+
+        <p>
+            Integralna teorija raziskuje možnost, da je jezikovni razvoj potekal
+            skozi dolgotrajne procese prepletanja narečij, jezikovnih stikov,
+            prevzemanja besedišča, pomenskih prenosov ter vplivanja starejših
+            jezikovnih plasti.
+        </p>
+
+        <p>
+            Namesto da bi jezikovne podobnosti obravnavala izključno kot
+            posledico skupnega izvora, jih poskuša razumeti tudi kot sledove
+            zgodovinskih povezav med jezikovnimi skupnostmi.
+        </p>
+
+        <a class="button" href="#hipoteza">Spoznajte izhodiščno hipotezo</a>
+    </div>
+</div>
+
+<main>
+
+<section id="uvod">
+    <h2>Uvod: jezik kot zgodovinski proces</h2>
+
+    <p>
+        Integralna teorija razvoja jezikov izhaja iz predpostavke, da je treba
+        zgodovino jezikov obravnavati kot prepleten proces, v katerem so poleg
+        skupnega jezikovnega izročila pomembno vlogo igrali tudi stiki med
+        različnimi jezikovnimi skupnostmi.
+    </p>
+
+    <p>
+        Jeziki niso nastajali in se spreminjali v praznem prostoru. Govorne
+        skupnosti so se selile, povezovale, razdvajale, združevale in prihajale
+        v stik z drugimi skupnostmi. Posamezne skupine so lahko prevzemale
+        različne besede, glasovne značilnosti in slovnične vzorce, medtem ko
+        so druge nekatere starejše značilnosti ohranjale.
+    </p>
+
+    <p>
+        Zato je mogoče jezikovno zgodovino razumeti tudi kot prepletanje
+        različnih razvojnih poti, ne zgolj kot zaporedno razvejanje jezikov
+        iz enega skupnega prednika.
+    </p>
+</section>
+
+<section id="hipoteza">
+    <h2>Izhodiščna hipoteza: vedsko jezikovno izhodišče</h2>
+
+    <p>
+        Ena osrednjih hipotez integralne teorije je, da je pri iskanju starejšega
+        skupnega jezikovnega izhodišča treba nameniti posebno pozornost
+        vedskemu oziroma proto-vedskemu jezikovnemu prostoru. Teorija temu
+        izhodišču pripisuje večjo verjetnost kot običajni predstavi o
+        enotnem stepskem praindoevropskem prajeziku.
+    </p>
+
+    <p>
+        To ne pomeni, da naj bi se vsi poznejši jeziki razvili neposredno iz
+        jezika Rigvede ali da bi bila ohranjena vedska besedila preprosta
+        časovna ničelna točka jezikovnega razvoja. Vedski jezik je v tem
+        okviru predvsem pomembno pričevanje o starejšem jezikovnem izročilu,
+        katerega povezave z drugimi jeziki je treba raziskovati v širšem
+        zgodovinskem kontekstu.
+    </p>
+
+    <div class="highlight">
+        <strong>Osrednje vprašanje:</strong> Ali je mogoče podobnosti med
+        sanskrtom, prakrti, slovanskimi, baltskimi in drugimi jeziki bolje
+        razumeti, če upoštevamo starejše narečne povezave, jezikovne stike
+        in različne zgodovinske plasti?
+    </div>
+
+    <p>
+        Integralna teorija zato ne išče ene same točke, iz katere bi se
+        vsi jeziki razvili po enotni poti. Raziskuje širši jezikovni prostor,
+        v katerem so se različne govorne skupnosti skozi dolga obdobja
+        povezovale in oddaljevale.
+    </p>
+</section>
+
+<section id="model">
+    <h2>Jezikovni razvoj kot prepletanje</h2>
+
+    <p>
+        Integralni pristop obravnava jezikovni razvoj kot rezultat več
+        sočasnih in medsebojno povezanih procesov. Ti procesi se ne
+        izključujejo, temveč lahko skupaj oblikujejo zgodovino posameznega
+        jezika.
+    </p>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Jezikovni stiki</h3>
+            <p>
+                Stiki med govorci različnih jezikov lahko povzročajo
+                prevzemanje besedišča, glasovnih značilnosti, slovničnih
+                vzorcev in načinov izražanja.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Narečni kontinuum</h3>
+            <p>
+                Sosednje govorne skupnosti si lahko delijo številne
+                značilnosti, čeprav se njihovi jeziki na širšem območju
+                postopoma razlikujejo.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Substrat in superstrat</h3>
+            <p>
+                Starejše jezikovne plasti lahko vplivajo na jezike, ki jih
+                pozneje izpodrinejo, prav tako pa lahko jezik politično
+                ali družbeno prevladujoče skupine vpliva na lokalne govore.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Notranje spremembe</h3>
+            <p>
+                Jeziki se spreminjajo tudi zaradi notranjih dejavnikov,
+                kot so analogija, poenostavljanje, preoblikovanje glasovnih
+                sistemov in spreminjanje slovničnih vzorcev.
+            </p>
+        </div>
+    </div>
+
+    <h3>Glasovne spremembe in stiki med jeziki</h3>
+
+    <p>
+        Integralna teorija posebno pozornost namenja vprašanju, v kolikšni
+        meri so glasovne spremembe povezane s stiki med govorci različnih
+        jezikov. Tradicionalne razlage pogosto opisujejo glasovne spremembe
+        kot sistematične notranje procese v posameznem jeziku. Integralni
+        pristop pa raziskuje tudi možnost, da so številne pomembne
+        spremembe nastale ali se razširile zaradi večjezičnosti, mešanja
+        prebivalstva in vplivanja drugih govornih sistemov.
+    </p>
+
+    <p>
+        Tudi jezikovna skupnost, ki je razmeroma izolirana, se lahko
+        spreminja. Vendar integralna teorija predpostavlja, da so lahko
+        obsežnejše in hitrejše spremembe posebej povezane z intenzivnimi
+        stiki med različnimi skupnostmi.
+    </p>
+
+    <p>
+        Večje prebivalstvo pri tem ne pomeni nujno enotnega jezikovnega
+        prostora. Posamezne skupine lahko vstopajo v različne stike,
+        se delno izolirajo, prevzemajo različne značilnosti in razvijajo
+        lastne govorne posebnosti. Tako lahko nastaja razvejana mreža
+        jezikovnih vplivov.
+    </p>
+</section>
+
+<section id="metodologija">
+    <h2>Raziskovalna metodologija</h2>
+
+    <p>
+        Integralna teorija poskuša posamezne jezikovne primerjave umestiti
+        v širši zgodovinski in jezikovni kontekst. Podobnost dveh besed
+        sama po sebi še ne dokazuje zgodovinske povezave. Pomembno je
+        preverjati več različnih vrst podatkov.
+    </p>
+
+    <ul>
+        <li>glasovno podobnost in možne zgodovinske glasovne spremembe;</li>
+        <li>pomenske povezave in njihove morebitne premike;</li>
+        <li>slovnično zgradbo in oblikoslovne vzporednice;</li>
+        <li>geografsko razširjenost primerjanih oblik;</li>
+        <li>zgodovinske okoliščine in možnosti jezikovnih stikov;</li>
+        <li>primerjavo z obstoječimi etimološkimi razlagami.</li>
+    </ul>
+
+    <p>
+        Namen raziskovanja je ugotoviti, ali posamezne primerjave tvorijo
+        širše in ponovljive vzorce, ki lahko prispevajo k razumevanju
+        zgodovine jezikov.
+    </p>
+</section>
+
+<section id="primerjave">
+    <h2>Jezikovne primerjave</h2>
+
+    <p>
+        Raziskovalno izhodišče teorije so konkretne primerjave med jeziki
+        različnih zgodovinskih obdobij in geografskih območij. Posebna
+        pozornost je namenjena sanskrtu in prakrtom, slovanskim in
+        baltskim jezikom ter starejšim jezikom Evrope in Bližnjega vzhoda.
+    </p>
+
+    <p>
+        Slovenščina je pri tem pomembno raziskovalno izhodišče. Njeno
+        besedišče, narečne posebnosti in zgodovinske jezikovne plasti
+        ponujajo številne možnosti za primerjave. Ker je slovenščina
+        materni jezik avtorja teorije, omogoča tudi natančnejše
+        raziskovanje pomenskih odtenkov in narečnih oblik.
+    </p>
+
+    <p>
+        Raziskave vključujejo tudi primerjave z jeziki, kot so sumerščina,
+        akadščina, elamščina, hetitščina, armenščina, venetščina in drugi
+        jeziki starejših civilizacij.
+    </p>
+
+    <div class="highlight">
+        Posamezne primerjave bodo predstavljene skupaj z izhodiščnimi
+        oblikami, pomenom, viri, predlagano razlago in morebitnimi
+        alternativnimi razlagami.
+    </div>
+</section>
+
+<section id="civilizacija">
+    <h2>Jezik in civilizacija</h2>
+
+    <p>
+        Jezik ni zgolj sredstvo sporazumevanja. V besedišču, izrazih,
+        simbolih in slovničnih strukturah se lahko ohranjajo sledovi
+        starejših predstav o svetu, naravi, družbi in človekovem položaju
+        v njem.
+    </p>
+
+    <p>
+        Integralna teorija zato raziskuje tudi povezave med jezikom,
+        mitologijo, filozofijo in zgodovino civilizacij. Posebno mesto
+        imajo pri tem vedski pojmi, kot sta Ṛta in Sarasvati, ter
+        primerjave s sorodnimi ali vzporednimi predstavami drugih
+        kulturnih izročil.
+    </p>
+</section>
+
+<section id="knjiga">
+    <h2>Knjiga: Kalki v slovenskem jeziku</h2>
+
+    <div class="book-box">
+        <h3>Kalki v slovenskem jeziku</h3>
+
+        <p>
+            Knjiga predstavlja obsežnejšo uporabo raziskovalnih izhodišč
+            integralne teorije. Skozi primerjave sanskrta, slovenščine
+            in številnih drugih jezikov obravnava vprašanja jezikovnih
+            korenin, zgodovinskih povezav, pomenskih plasti in
+            starodavnih jezikovnih izročil.
+        </p>
+
+        <p>
+            Knjiga je namenjena predvsem slovenskemu bralcu, medtem ko
+            je ta spletna stran posvečena širši teoriji in njenim
+            mednarodnim raziskovalnim povezavam.
+        </p>
+
+        <a class="button" href="https://7bodhi.github.io/Kalki/">
+            Več o knjigi in naročilu
+        </a>
+    </div>
+</section>
+
+<section id="viri">
+    <h2>Viri in nadaljnje raziskovanje</h2>
+
+    <p>
+        Stran se bo postopoma dopolnjevala z bibliografijo, raziskovalnimi
+        prispevki, jezikovnimi primerjavami in razpravami o zgodovini
+        primerjalnega jezikoslovja.
+    </p>
+
+    <p>
+        Namen predstavitve je omogočiti preverjanje posameznih trditev,
+        primerjavo različnih razlag in odprto strokovno razpravo.
+    </p>
+</section>
+
+</main>
+
+<footer>
+    <p>Integralna teorija razvoja jezikov</p>
+    <p>Raziskovanje jezikovnih povezav, zgodovine in civilizacij.</p>
+</footer>
+
+</body>
+</html>
