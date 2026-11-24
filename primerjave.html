@@ -3,74 +3,58 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Jezikovne primerjave | Integralna teorija razvoja jezikov</title>
-
-<meta name="description" content="Primeri jezikovnih kontinuitet, stikov in vzporednih značilnosti v okviru integralne teorije razvoja jezikov.">
+<title>Primerjave – Integralna teorija razvoja jezikov</title>
 
 <style>
-:root {
-    --dark-green: #183d32;
-    --green: #315c4b;
-    --light-green: #e8eee8;
-    --cream: #f7f5ee;
-    --gold: #bd9b55;
-    --text: #29332e;
-    --muted: #66736b;
-    --white: #ffffff;
-}
-
 * {
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
-    background: var(--cream);
-    color: var(--text);
-    font-family: Georgia, "Times New Roman", serif;
-    line-height: 1.75;
+    background: #f5f1e6;
+    color: #26352d;
+    font-family: Georgia, serif;
+    line-height: 1.7;
 }
 
 header {
-    background: var(--dark-green);
-    color: var(--white);
+    background: #183c2c;
+    color: #f5f1e6;
     padding: 22px 20px;
 }
 
 .header-inner {
-    max-width: 1100px;
+    max-width: 1050px;
     margin: auto;
 }
 
-.site-title {
-    font-size: 1.15rem;
-    letter-spacing: 0.04em;
-    margin-bottom: 15px;
-    color: #e7e4d8;
+header h1 {
+    margin: 0 0 12px;
+    font-size: 1.7rem;
+    font-weight: normal;
 }
 
 nav {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px 24px;
+    gap: 18px;
 }
 
 nav a {
-    color: #f3f0e6;
+    color: #e5d5a6;
     text-decoration: none;
     font-size: 0.95rem;
 }
 
-nav a:hover,
-nav a.active {
-    color: #e4c477;
+nav a:hover {
+    text-decoration: underline;
 }
 
 .hero {
-    background: linear-gradient(135deg, #315c4b, #587765);
-    color: white;
-    padding: 75px 22px 65px;
+    background: linear-gradient(135deg, #315d43, #183c2c);
+    color: #f8f3e8;
+    padding: 55px 20px;
 }
 
 .hero-inner {
@@ -78,207 +62,107 @@ nav a.active {
     margin: auto;
 }
 
-.hero h1 {
-    font-size: clamp(2rem, 5vw, 3.2rem);
-    line-height: 1.2;
+.hero h2 {
+    font-size: 2.2rem;
+    line-height: 1.25;
     font-weight: normal;
-    margin: 0 0 22px;
+    margin: 0 0 18px;
 }
 
 .hero p {
+    font-size: 1.12rem;
     max-width: 780px;
-    font-size: 1.15rem;
-    color: #f0f1e9;
-}
-
-.hero .subtitle {
-    color: #e3c77f;
-    font-size: 0.9rem;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    margin-bottom: 18px;
+    color: #e8e5d9;
 }
 
 main {
     max-width: 900px;
-    margin: 0 auto;
-    padding: 45px 22px 80px;
+    margin: 45px auto;
+    padding: 0 22px;
 }
 
 section {
-    margin-bottom: 65px;
-    scroll-margin-top: 25px;
-}
-
-h2 {
-    color: var(--dark-green);
-    font-size: 1.8rem;
-    font-weight: normal;
-    line-height: 1.3;
-    margin-bottom: 22px;
+    margin-bottom: 48px;
 }
 
 h3 {
-    color: var(--green);
-    font-size: 1.25rem;
+    color: #244c35;
+    font-size: 1.55rem;
     font-weight: normal;
-    margin-top: 32px;
     margin-bottom: 12px;
 }
 
-p {
-    margin: 0 0 18px;
-}
-
-.lead {
-    font-size: 1.16rem;
-    color: #3e5146;
-}
-
-.gold-line {
-    width: 65px;
-    height: 3px;
-    background: var(--gold);
-    margin: 25px 0 30px;
-}
-
-.example {
-    background: var(--white);
-    border-left: 4px solid var(--gold);
-    padding: 22px 25px;
-    margin: 25px 0;
-}
-
-.example p:last-child {
-    margin-bottom: 0;
+h4 {
+    color: #315d43;
+    margin-bottom: 5px;
+    font-size: 1.08rem;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
-    margin: 25px 0;
-    background: white;
-    font-size: 0.96rem;
+    margin: 22px 0;
+    font-size: 0.95rem;
 }
 
 th, td {
-    padding: 12px 14px;
-    border-bottom: 1px solid #e1e5df;
+    border-bottom: 1px solid #d8d2c2;
+    padding: 9px 11px;
     text-align: left;
     vertical-align: top;
 }
 
 th {
-    background: var(--light-green);
-    color: var(--dark-green);
-    font-weight: normal;
+    background: #e8e4d7;
+    color: #244c35;
 }
 
-tr:last-child td {
-    border-bottom: none;
+.interpretation {
+    background: #ebe8dc;
+    border-left: 4px solid #b59a55;
+    padding: 15px 20px;
+    margin: 16px 0;
+}
+
+.interpretation p:last-child {
+    margin-bottom: 0;
 }
 
 .note {
-    background: #edf0e9;
-    padding: 20px 23px;
-    margin: 25px 0;
-    border-radius: 3px;
-}
-
-.note strong {
-    color: var(--dark-green);
-}
-
-blockquote {
-    border-left: 3px solid var(--gold);
-    margin: 28px 0;
-    padding: 5px 0 5px 22px;
-    color: #46564c;
-    font-size: 1.1rem;
-}
-
-a {
-    color: #315c4b;
-}
-
-a:hover {
-    color: #8c6e30;
-}
-
-.section-index {
-    background: #edf0e9;
-    padding: 22px 28px;
-    margin: 30px 0 55px;
-}
-
-.section-index strong {
-    color: var(--dark-green);
-}
-
-.section-index ul {
-    margin-bottom: 0;
-    padding-left: 22px;
-}
-
-.section-index a {
-    text-decoration: none;
-}
-
-.section-index a:hover {
-    text-decoration: underline;
-}
-
-.conclusion {
-    background: var(--dark-green);
-    color: white;
-    padding: 32px;
-    margin-top: 40px;
-}
-
-.conclusion h2 {
-    color: #e5ca84;
-}
-
-.conclusion p {
-    color: #f0f0e9;
-}
-
-footer {
-    background: var(--dark-green);
-    color: #d8ded8;
-    padding: 30px 22px;
-    text-align: center;
+    color: #686d64;
     font-size: 0.9rem;
 }
 
-footer a {
-    color: #e4c477;
-    text-decoration: none;
+.conclusion {
+    background: #183c2c;
+    color: #f5f1e6;
+    padding: 28px;
+    margin-top: 45px;
+}
+
+.conclusion h3 {
+    color: #e5d5a6;
+}
+
+footer {
+    background: #183c2c;
+    color: #c9d2c8;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.85rem;
 }
 
 @media (max-width: 650px) {
-    .hero {
-        padding: 55px 22px;
-    }
-
-    main {
-        padding: 35px 18px 60px;
+    .hero h2 {
+        font-size: 1.7rem;
     }
 
     table {
-        font-size: 0.88rem;
+        font-size: 0.85rem;
     }
 
     th, td {
-        padding: 9px 8px;
-    }
-
-    .example {
-        padding: 18px;
-    }
-
-    .conclusion {
-        padding: 24px;
+        padding: 7px;
     }
 }
 </style>
@@ -287,608 +171,387 @@ footer a {
 <body>
 
 <header>
-    <div class="header-inner">
-        <div class="site-title">INTEGRALNA TEORIJA RAZVOJA JEZIKOV</div>
-
-        <nav>
-            <a href="index.html">Domov</a>
-            <a href="zgodovina.html">Zgodovinsko ozadje</a>
-            <a href="model.html">Integralni model</a>
-            <a href="metodologija.html">Metodologija</a>
-            <a href="primerjave.html" class="active">Jezikovne primerjave</a>
-            <a href="odprta-vprasanja.html">Odprta vprašanja</a>
-        </nav>
-    </div>
+<div class="header-inner">
+    <h1>Integralna teorija razvoja jezikov</h1>
+    <nav>
+        <a href="index.html">Domov</a>
+        <a href="zgodovina.html">Zgodovina</a>
+        <a href="model.html">Model</a>
+        <a href="metodologija.html">Metodologija</a>
+        <a href="primerjave.html">Primerjave</a>
+        <a href="odprta-vprasanja.html">Odprta vprašanja</a>
+    </nav>
+</div>
 </header>
 
-
 <div class="hero">
-    <div class="hero-inner">
-        <div class="subtitle">Jezikovni pojavi in zgodovinske povezave</div>
-
-        <h1>Jeziki skozi čas: kontinuitete, stiki in skupne značilnosti</h1>
-
-        <p>
-            Današnje jezikovne družine ne zajemajo celotne zgodovine jezikovnih
-            skupnosti. Primerjava besedišča, slovničnih struktur, glasovnih
-            pojavov in krajevnih imen razkriva tudi širše povezave, ki jih
-            ni mogoče razumeti zgolj kot zaporedje razvejanj iz skupnih prednikov.
-        </p>
-    </div>
+<div class="hero-inner">
+    <h2>Primerjave: dva pogleda na jezikovno zgodovino</h2>
+    <p>
+        Jezikovne podobnosti je mogoče razlagati na različne načine.
+        Spodnji primeri soočajo tradicionalno praindoevropsko
+        rekonstrukcijo (PIE) in integralni pristop, ki upošteva
+        več jezikovnih plasti, dolgotrajne stike in širša kulturna območja.
+    </p>
 </div>
-
+</div>
 
 <main>
 
-<section id="uvod">
+<section>
+<h3>1. Števila: dva načina sestavljanja</h3>
 
-    <h2>Jezikovna zgodovina ni samo razvejanje</h2>
+<p>
+V številnih jezikih se sestavljena števila tvorijo po načelu
+desetica–enica, v drugih pa enica–desetica. Slovenščina pri
+številih nad dvajset uporablja vrstni red, ki se razlikuje od
+večine slovanskih jezikov.
+</p>
 
-    <div class="gold-line"></div>
+<table>
+<tr>
+<th>Jezik</th>
+<th>Primer</th>
+<th>Vrstni red</th>
+</tr>
+<tr>
+<td>Slovenščina</td>
+<td><i>dvaindvajset</i></td>
+<td>2 + 20</td>
+</tr>
+<tr>
+<td>Sanskrt</td>
+<td><i>dvāviṃśati</i></td>
+<td>2 + 20</td>
+</tr>
+<tr>
+<td>Avestijščina</td>
+<td><i>paṇca-ca vīsaiti</i> – 25</td>
+<td>5 + 20</td>
+</tr>
+<tr>
+<td>Nemščina</td>
+<td><i>zweiundzwanzig</i></td>
+<td>2 + 20</td>
+</tr>
+<tr>
+<td>Nizozemščina</td>
+<td><i>tweeëntwintig</i></td>
+<td>2 + 20</td>
+</tr>
+<tr>
+<td>Ruščina</td>
+<td><i>двадцать два</i></td>
+<td>20 + 2</td>
+</tr>
+<tr>
+<td>Litovščina</td>
+<td><i>dvidešimt du</i></td>
+<td>20 + 2</td>
+</tr>
+<tr>
+<td>Finščina</td>
+<td><i>kaksikymmentä kaksi</i></td>
+<td>20 + 2</td>
+</tr>
+<tr>
+<td>Madžarščina</td>
+<td><i>huszonkettő</i></td>
+<td>20 + 2</td>
+</tr>
+</table>
 
-    <p class="lead">
-        Jeziki se ne razvijajo v popolni izolaciji. Njihova zgodovina je
-        zgodovina prebivalstva, selitev, večjezičnosti, kulturnih vplivov,
-        narečnih prepletanj in postopnega spreminjanja govornih navad.
-    </p>
+<p>
+Zgodovinski viri kažejo, da so nekateri jeziki poznali oba načina
+ali pa so skozi čas spremenili vrstni red. V starih germanskih
+jezikih so bile izpričane različne možnosti. V avestijščini je
+ohranjen vrstni red enica–desetica, medtem ko sta srednja in
+sodobna perzijščina prešli na desetica–enica.
+</p>
 
-    <p>
-        Drevesni model jezikovnih družin prikazuje sorodnost jezikov in
-        njihovo razvejanje iz rekonstruiranih prednikov. Vendar tak prikaz
-        ne zajame vedno dovolj dobro dolgotrajnih stikov med jezikovnimi
-        skupnostmi, prehajanja značilnosti med narečji in ohranjanja
-        starejših jezikovnih plasti.
-    </p>
+<p>
+Tudi v stari cerkveni slovanščini je pri številih nad dvajset
+izpričan vrstni red desetica–enica. To pa samo po sebi še ne
+dokazuje, da so bile vse starejše slovanske narečne različice
+enake.
+</p>
 
-    <p>
-        Integralna teorija razvoja jezikov zato izhaja iz širšega pogleda:
-        jezikovno območje lahko skozi dolga obdobja povezuje več narečij
-        in jezikovnih skupnosti, ki si medsebojno izmenjujejo besede,
-        glasovne značilnosti, slovnične strukture in pomenske vzorce.
-    </p>
+<div class="interpretation">
+<h4>Razlaga v okviru PIE</h4>
+<p>
+Slovenski vrstni red se pogosto pojasnjuje z nemškim jezikovnim
+vplivom. Podobni vrstni redi v drugih jezikih se obravnavajo kot
+posebni zgodovinski razvoji, ohranitve ali posledice jezikovnih
+stikov.
+</p>
+</div>
 
-    <p>
-        Naslednji primeri prikazujejo, kako je mogoče takšne povezave
-        raziskovati na različnih ravneh jezika.
-    </p>
+<div class="interpretation">
+<h4>Razlaga integralne teorije</h4>
+<p>
+Različni vrstni redi so lahko ostanki starejših jezikovnih
+vzorcev, ki so bili razširjeni prek več jezikovnih območij.
+Integralni pristop raziskuje možnost, da je slovenski vzorec
+povezan s širšo vedsko jezikovno plastjo, medtem ko je širjenje
+vrstnega reda desetica–enica mogoče povezovati tudi z drugimi
+zgodovinskimi jezikovnimi valovi.
+</p>
+</div>
 
-    <div class="section-index">
-        <strong>Vsebina strani</strong>
-        <ul>
-            <li><a href="#stevila">Števila in dva načina sestavljanja</a></li>
-            <li><a href="#besedisce">Besedišče in skupne jezikovne plasti</a></li>
-            <li><a href="#glasovi">Glasovne spremembe in narečne različice</a></li>
-            <li><a href="#hidronimi">Vodna imena in jezikovna kontinuiteta</a></li>
-            <li><a href="#wanderworter">Kroženje besed med jezikovnimi območji</a></li>
-            <li><a href="#rekonstrukcije">Narava zgodovinskih rekonstrukcij</a></li>
-        </ul>
-    </div>
+<h4>Dvajsetiški številski sistemi</h4>
 
+<p>
+Druga zanimiva skupina so jeziki, ki pri tvorjenju števil
+uporabljajo osnovo dvajset:
+</p>
+
+<table>
+<tr>
+<th>Jezik</th>
+<th>Primer</th>
+<th>Pomen</th>
+</tr>
+<tr>
+<td>Baskovščina</td>
+<td><i>berrogei</i></td>
+<td>40 = 2 × 20</td>
+</tr>
+<tr>
+<td>Valižanščina</td>
+<td><i>deugain</i></td>
+<td>40 = 2 × 20</td>
+</tr>
+<tr>
+<td>Bretonščina</td>
+<td><i>daou-ugent</i></td>
+<td>40 = 2 × 20</td>
+</tr>
+<tr>
+<td>Francoščina</td>
+<td><i>quatre-vingts</i></td>
+<td>80 = 4 × 20</td>
+</tr>
+<tr>
+<td>Gruz inščina</td>
+<td><i>ormotsi</i></td>
+<td>40 = 2 × 20</td>
+</tr>
+</table>
+
+<div class="interpretation">
+<h4>Razlaga v okviru PIE</h4>
+<p>
+Dvajsetiški sistem v keltskih jezikih se obravnava kot poseben
+razvoj, v francoščini pa so se ohranile njegove zgodovinske
+plasti. Baskovščina in gruzinščina imata neindoevropsko
+jezikovno zgodovino, zato njunih sistemov PIE ne pojasnjuje
+neposredno.
+</p>
+</div>
+
+<div class="interpretation">
+<h4>Razlaga integralne teorije</h4>
+<p>
+Razširjenost dvajsetiških sistemov odpira vprašanje starejših
+kulturnih in jezikovnih povezav med območji, ki jih običajna
+družinska razvrstitev obravnava ločeno. Integralni pristop
+raziskuje možnost povezav s širšimi kartvelskimi in drugimi
+jezikovnimi plastmi.
+</p>
+</div>
+
+<p class="note">
+Opomba: vrstni red številskih znakov v starih zapisih ni vedno
+enak vrstnemu redu govorjenih besed. Pri egipčanščini in
+sumerščini je zato treba ločiti pisni zapis od rekonstruirane
+govorjene oblike.
+</p>
 </section>
 
+<section>
+<h3>2. Besedne povezave: skupna dediščina ali jezikovne plasti?</h3>
 
-<section id="stevila">
+<p>
+Med slovenščino in sanskrtom najdemo številne besedne vzporednice.
+Nekatere so del običajnih indoevropskih primerjav, druge pa je
+treba obravnavati v širšem pomenskem in zgodovinskem kontekstu.
+</p>
 
-    <h2>1. Števila: dva načina sestavljanja</h2>
+<table>
+<tr>
+<th>Slovenščina</th>
+<th>Sanskrt</th>
+<th>Pomen</th>
+</tr>
+<tr>
+<td>brat</td>
+<td><i>bhrātṛ</i></td>
+<td>brat</td>
+</tr>
+<tr>
+<td>snaha</td>
+<td><i>snuṣā</i></td>
+<td>snaha</td>
+</tr>
+<tr>
+<td>dim</td>
+<td><i>dhūma</i></td>
+<td>dim</td>
+</tr>
+<tr>
+<td>dolgo</td>
+<td><i>dīrgha</i></td>
+<td>dolg</td>
+</tr>
+<tr>
+<td>polno</td>
+<td><i>pūrṇa</i></td>
+<td>poln</td>
+</tr>
+<tr>
+<td>novo</td>
+<td><i>nava</i></td>
+<td>nov</td>
+</tr>
+</table>
 
-    <div class="gold-line"></div>
+<div class="interpretation">
+<h4>Razlaga v okviru PIE</h4>
+<p>
+Podobnosti se pojasnjujejo z dedovanjem iz skupnega
+praindoevropskega jezika. Glasovne razlike se razlagajo s
+sistematičnimi glasovnimi spremembami v posameznih jezikovnih
+vejah.
+</p>
+</div>
 
-    <p class="lead">
-        Vrstni red enic in desetic pri sestavljenih številih razkriva
-        zanimivo zgodovinsko razporeditev, ki presega današnje meje
-        posameznih jezikovnih družin.
-    </p>
+<div class="interpretation">
+<h4>Razlaga integralne teorije</h4>
+<p>
+Integralni pristop ne zanika pomena skupne jezikovne dediščine,
+vendar jo umešča v širšo zgodovino narečnih kontinuumov,
+dolgotrajnih stikov in večplastnega razvoja. Poleg glasovne
+oblike raziskuje tudi pomenske povezave, notranjo zgradbo besed
+in njihovo kulturno ozadje.
+</p>
+</div>
 
-    <p>
-        Pri tvorjenju sestavljenih števil lahko jeziki uporabljajo
-        dva osnovna vrstna reda:
-    </p>
-
-    <div class="example">
-        <p><strong>Enica pred deseticami:</strong></p>
-        <p><em>dva-in-dvajset</em> – 2 + 20</p>
-
-        <p><strong>Desetica pred enico:</strong></p>
-        <p><em>dvajset-dva</em> – 20 + 2</p>
-    </div>
-
-    <p>
-        Slovenščina uporablja prvi način: enaindvajset, dvaindvajset,
-        triintrideset. Enak vrstni red najdemo v sanskrtu, na primer
-        <em>dvāviṃśati</em> (22) in <em>trayastriṃśat</em> (33).
-    </p>
-
-    <p>
-        V litovščini, ruščini in številnih drugih slovanskih jezikih
-        je vrstni red obraten: najprej desetica, nato enica.
-    </p>
-
-    <table>
-        <thead>
-            <tr>
-                <th>Jezik</th>
-                <th>Primer za 22</th>
-                <th>Vrstni red</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Slovenščina</td>
-                <td>dvaindvajset</td>
-                <td>2 + 20</td>
-            </tr>
-            <tr>
-                <td>Sanskrt</td>
-                <td>dvāviṃśati</td>
-                <td>2 + 20</td>
-            </tr>
-            <tr>
-                <td>Nemščina</td>
-                <td>zweiundzwanzig</td>
-                <td>2 + 20</td>
-            </tr>
-            <tr>
-                <td>Nizozemščina</td>
-                <td>tweeëntwintig</td>
-                <td>2 + 20</td>
-            </tr>
-            <tr>
-                <td>Litovščina</td>
-                <td>dvidešimt du</td>
-                <td>20 + 2</td>
-            </tr>
-            <tr>
-                <td>Ruščina</td>
-                <td>двадцать два</td>
-                <td>20 + 2</td>
-            </tr>
-            <tr>
-                <td>Finščina</td>
-                <td>kaksikymmentä kaksi</td>
-                <td>20 + 2</td>
-            </tr>
-            <tr>
-                <td>Estonščina</td>
-                <td>kakskümmend kaks</td>
-                <td>20 + 2</td>
-            </tr>
-            <tr>
-                <td>Madžarščina</td>
-                <td>huszonkettő</td>
-                <td>20 + 2</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <h3>Širša zgodovinska razporeditev</h3>
-
-    <p>
-        Današnja razporeditev ni enaka zgodovinski. V starejših germanskih
-        jezikih je bil vrstni red enica–desetica razširjen precej širše,
-        kot je razvidno iz današnje podobe evropskih jezikov. V nekaterih
-        jezikih sta obstajali tudi vzporedni različici, pozneje pa se je
-        v knjižnih normah uveljavil enoten način.
-    </p>
-
-    <p>
-        Tudi v slovanskem prostoru slika ni povsem enotna. Slovenščina
-        in lužiška srbščina ohranjata vrstni red enica–desetica, medtem
-        ko je v večini drugih slovanskih knjižnih jezikov običajen
-        vrstni red desetica–enica.
-    </p>
-
-    <p>
-        Stara cerkvena slovanščina je pri številih uporabljala različne
-        konstrukcije. Pri številih od 11 do 19 najdemo enico pred deseticami,
-        pri številih nad 20 pa tudi konstrukcije z deseticami pred enicami.
-        Pisna norma zato ne predstavlja nujno vseh starejših govornih
-        različic slovanskega prostora.
-    </p>
-
-    <h3>Primerjalni pogled na uralske jezike</h3>
-
-    <p>
-        Finski, estonski in madžarski primeri kažejo, da je vrstni red
-        desetica–enica značilen tudi za več uralskih jezikov. Tudi pri
-        njih pa obstajajo posebnosti v tvorjenju števil, zlasti pri
-        številih od 11 do 19.
-    </p>
-
-    <p>
-        Primerjava z uralskimi jeziki odpira vprašanje starejših
-        jezikovnih stikov in širših območij, na katerih so se posamezni
-        načini sestavljanja števil uveljavili ali ohranili.
-    </p>
-
-    <div class="note">
-        <strong>Interpretacija integralne teorije</strong>
-        <p>
-            Integralna teorija obravnava vrstni red enica–desetica kot
-            možno starejšo značilnost, ki se je ohranila v različnih
-            jezikovnih okoljih. Njegova prisotnost v sanskrtu in slovenščini
-            je posebej zanimiva v luči domneve o starejši vedski jezikovni
-            plasti, katere vpliv naj bi segal širše od območja današnje
-            indijske podceline.
-        </p>
-        <p>
-            Nasprotni vrstni red, ki ga najdemo v baltskih, večini slovanskih
-            in številnih uralskih jezikih, je mogoče obravnavati v povezavi
-            s starejšimi jezikovnimi stiki in poznejšim poenotenjem
-            številskih sistemov.
-        </p>
-    </div>
-
-    <p>
-        Razlaga, da je slovenščina vrstni red enica–desetica preprosto
-        prevzela od nemščine, ne pojasni njegove širše zgodovinske
-        razširjenosti. Nemški vpliv je lahko del zgodovine njegove
-        ohranitve ali razširitve, ne more pa samodejno pojasniti vseh
-        primerov.
-    </p>
-
+<p>
+Podobnost dveh besed je zato šele začetek raziskave. Pomembno je,
+kako se njune oblike in pomeni umeščajo v širši sistem sorodnih
+pojavov.
+</p>
 </section>
 
+<section>
+<h3>3. Krajevna in vodna imena: sledi starejših jezikovnih plasti</h3>
 
-<section id="besedisce">
+<p>
+Imena rek, gora in naselij pogosto preživijo menjave prebivalstva,
+jezikov in političnih ureditev. Zato so lahko pomemben vir za
+raziskovanje starejših jezikovnih plasti.
+</p>
 
-    <h2>2. Besedišče in skupne jezikovne plasti</h2>
+<p>
+Na slovenskem prostoru so med zanimivimi primeri imena
+Bistrica, Drava, Hubelj, Idrijca, Kokra, Kolpa, Krka, Mirna,
+Nadiža, Soča in Sora.
+</p>
 
-    <div class="gold-line"></div>
+<div class="interpretation">
+<h4>Razlaga v okviru PIE</h4>
+<p>
+Zgodovinska imena se obravnavajo glede na izpričane starejše
+oblike, znane jezikovne korene in glasovne zakonitosti.
+Posamezna imena se pogosto povezujejo s predslovanskimi
+jezikovnimi plastmi, starejšimi indoevropskimi oblikami ali
+lokalnimi substrati.
+</p>
+</div>
 
-    <p class="lead">
-        Besedne podobnosti med oddaljenimi jeziki lahko odražajo
-        skupno dediščino, dolgotrajne stike, prevzemanje besed ali
-        več zaporednih zgodovinskih plasti.
-    </p>
+<div class="interpretation">
+<h4>Razlaga integralne teorije</h4>
+<p>
+Integralni pristop raziskuje možnost, da nekatera imena
+ohranjajo starejše pomenske in glasovne povezave, ki jih ni
+mogoče zadovoljivo pojasniti zgolj z razvrščanjem v posamezne
+jezikovne družine. Pri tem primerja slovenske oblike s
+sanskrtom, drugimi starimi jeziki in širšimi zgodovinskimi
+jezikovnimi območji.
+</p>
+</div>
 
-    <p>
-        Primerjalno jezikoslovje je odkrilo številne sorodnosti med
-        slovenščino, sanskrtom in drugimi indoevropskimi jeziki.
-        Nekatere so del običajnih primerjalnih etimologij, druge pa
-        odpirajo vprašanja o širšem obsegu jezikovnih stikov.
-    </p>
-
-    <table>
-        <thead>
-            <tr>
-                <th>Slovenščina</th>
-                <th>Sanskrt</th>
-                <th>Primerjalna opomba</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>brat</td>
-                <td>bhrātṛ</td>
-                <td>Stara sorodstvena beseda</td>
-            </tr>
-            <tr>
-                <td>snaha</td>
-                <td>snuṣā</td>
-                <td>Stara sorodstvena beseda</td>
-            </tr>
-            <tr>
-                <td>dim</td>
-                <td>dhūma</td>
-                <td>Podobnost v glasovni in pomenski zgradbi</td>
-            </tr>
-            <tr>
-                <td>dolgo</td>
-                <td>dīrgha</td>
-                <td>Primerjava s širšim indoevropskim besediščem</td>
-            </tr>
-            <tr>
-                <td>polno</td>
-                <td>pūrṇa</td>
-                <td>Primerjava besed za polnost in celovitost</td>
-            </tr>
-            <tr>
-                <td>novo</td>
-                <td>nava</td>
-                <td>Širša indoevropska vzporednica</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <p>
-        Namen takšnih primerjav ni zgolj ugotavljanje, ali sta dve besedi
-        sorodni. Pomembno je tudi vprašanje, kako so se posamezne oblike
-        širile, kako so se spreminjali njihovi pomeni in ali se določene
-        značilnosti pojavljajo v več jezikovnih plasteh istega območja.
-    </p>
-
-    <p>
-        Integralna teorija zato primerja besedišče v širšem kontekstu:
-        skupaj z glasovnimi značilnostmi, slovničnimi oblikami,
-        geografijo, zgodovinskimi podatki in kulturnim okoljem.
-    </p>
-
+<p>
+Predlagane etimologije posameznih imen je treba preverjati
+posamično. Njihova vrednost se pokaže predvsem takrat, ko se
+ujemajo z več neodvisnimi jezikovnimi in zgodovinskimi podatki.
+</p>
 </section>
 
+<section>
+<h3>4. Jezikovni razvoj: drevo ali prepletanje valov?</h3>
 
-<section id="glasovi">
+<p>
+Jeziki se ne razvijajo v zgodovinskem vakuumu. Govorci se
+selijo, trgujejo, sklepajo zavezništva, prevzemajo kulturne
+vzorce in živijo v večjezičnih okoljih. Jezikovne spremembe
+zato niso vedno enosmerne in omejene na posamezno jezikovno
+družino.
+</p>
 
-    <h2>3. Glasovne spremembe in narečne različice</h2>
+<div class="interpretation">
+<h4>Razlaga v okviru PIE</h4>
+<p>
+Družinsko drevo prikazuje razvejanje jezikov iz skupnega
+prednika. Stiki med jeziki se dodatno pojasnjujejo z
+izposojanjem, substrati, superstrati in poznejšimi vplivi.
+</p>
+</div>
 
-    <div class="gold-line"></div>
-
-    <p class="lead">
-        Glasovne spremembe niso samo abstraktna pravila. So del živega
-        govora, ki se spreminja skozi čas, prostor in stik med ljudmi.
-    </p>
-
-    <p>
-        Primerjalna metoda temelji na prepoznavanju glasovnih ustreznic
-        med jeziki. Takšne ustreznice so pomembno orodje pri raziskovanju
-        jezikovne zgodovine. Vendar je zgodovinski razvoj govora
-        kompleksnejši od preprostega sistema, v katerem bi se vsak glas
-        vedno in povsod spreminjal na enak način.
-    </p>
-
-    <p>
-        Na glasovne spremembe vplivajo izgovorne navade, položaj glasu
-        v besedi, narečne razlike, analogija, večjezičnost in stik
-        z drugimi govorci. Posebej spremenljivi so samoglasniki,
-        katerih izgovorjava se lahko spreminja tudi znotraj istega
-        jezikovnega prostora.
-    </p>
-
-    <p>
-        Integralna teorija zato ne obravnava posamezne besedne primerjave
-        samo kot vprašanje, ali ustreza vnaprej določeni glasovni formuli.
-        Zanima jo tudi verjetnost posameznih glasovnih prehodov,
-        njihova pogostost, pomenski kontekst in možnost prenosa
-        med narečji.
-    </p>
-
-    <div class="example">
-        <p>
-            <strong>Osrednje vprašanje:</strong>
-        </p>
-        <p>
-            Ali lahko zgodovinsko razmerje med dvema besedama razumemo
-            samo skozi enoten niz glasovnih sprememb, ali moramo
-            upoštevati tudi narečne različice, jezikovni stik in
-            večkratno prilagajanje besede v različnih govornih okoljih?
-        </p>
-    </div>
-
+<div class="interpretation">
+<h4>Razlaga integralne teorije</h4>
+<p>
+Jezikovna zgodovina je rezultat več zaporednih in deloma
+sočasnih razvojnih valov. Integralna teorija raziskuje
+povezave med vedskimi, baltsko-uralskimi, kartvelskimi in
+drugimi jezikovnimi plastmi ter njihovo prepletanje skozi
+dolga zgodovinska obdobja.
+</p>
+<p>
+Jezikovne družine tako niso nujno zaprte in ločene enote,
+temveč deli širšega zgodovinskega prostora, v katerem so se
+jeziki oblikovali, spreminjali in ponovno povezovali.
+</p>
+</div>
 </section>
-
-
-<section id="hidronimi">
-
-    <h2>4. Vodna imena in jezikovna kontinuiteta</h2>
-
-    <div class="gold-line"></div>
-
-    <p class="lead">
-        Imena rek lahko ohranijo starejše jezikovne plasti tudi takrat,
-        ko se jezik prebivalstva na določenem območju že večkrat spremenil.
-    </p>
-
-    <p>
-        Reke so trajne geografske značilnosti. Njihova imena se pogosto
-        ohranjajo skozi dolga obdobja, tudi ob menjavi prebivalstva,
-        političnih meja in govorjenih jezikov.
-    </p>
-
-    <p>
-        Integralna teorija v imenih rek raziskuje možne ostanke starejših
-        jezikovnih plasti in primerja njihovo razširjenost v širšem
-        evropskem prostoru.
-    </p>
-
-    <h3>Primeri iz Slovenije</h3>
-
-    <table>
-        <thead>
-            <tr>
-                <th>Ime</th>
-                <th>Predlagana primerjava v okviru teorije</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Bistrica</td>
-                <td>Primerjava z izrazom za hitro oziroma hitro tekočo vodo</td>
-            </tr>
-            <tr>
-                <td>Drava, Dravinja</td>
-                <td>Sanskrt: dravantī – reka</td>
-            </tr>
-            <tr>
-                <td>Hubelj</td>
-                <td>Sanskrt: śubha – čisto, svetlo</td>
-            </tr>
-            <tr>
-                <td>Idrijca</td>
-                <td>Primerjave z izrazi udra in indriya</td>
-            </tr>
-            <tr>
-                <td>Kokra, Kokrica</td>
-                <td>Primerjava s sanskrtskim kākara</td>
-            </tr>
-            <tr>
-                <td>Kolpa</td>
-                <td>Primerjava s sanskrtskim kūpa – vodnjak</td>
-            </tr>
-            <tr>
-                <td>Mirna</td>
-                <td>Primerjava s sanskrtskim mīra – morje</td>
-            </tr>
-            <tr>
-                <td>Nadiža</td>
-                <td>Primerjava s sanskrtskim nadī – reka</td>
-            </tr>
-            <tr>
-                <td>Soča</td>
-                <td>Primerjava s sanskrtskim śuci – čisto</td>
-            </tr>
-            <tr>
-                <td>Sora</td>
-                <td>Primerjava s sanskrtskim sarit – reka</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <p>
-        Primerjave se ne omejujejo na Slovenijo. Podobne raziskovalne
-        možnosti se pojavljajo tudi v alpskem prostoru, na Balkanu,
-        v Italiji, na Sardiniji in drugod.
-    </p>
-
-    <p>
-        Hans Krahe je v raziskavah stare evropske hidronimije opozoril
-        na širše vzorce v imenih evropskih rek. Integralna teorija
-        jih obravnava tudi v povezavi z možnostjo starejših jezikovnih
-        plasti, ki so segale prek poznejših jezikovnih meja.
-    </p>
-
-    <div class="note">
-        <strong>Raziskovalno izhodišče</strong>
-        <p>
-            Podobnost imena reke z besedo v drugem jeziku sama po sebi
-            še ne določa njegovega izvora. Pomembni so najstarejši zapisi,
-            geografska razširjenost, glasovna zgradba in zgodovinski
-            kontekst. Integralna teorija te podatke povezuje v širšo
-            primerjavo jezikovnih plasti.
-        </p>
-    </div>
-
-</section>
-
-
-<section id="wanderworter">
-
-    <h2>5. Kroženje besed med jezikovnimi območji</h2>
-
-    <div class="gold-line"></div>
-
-    <p class="lead">
-        Besede ne ostajajo nujno znotraj ene jezikovne družine.
-        Lahko potujejo med ljudstvi, narečji in kulturnimi območji,
-        pri tem pa spreminjajo glasovno obliko in pomen.
-    </p>
-
-    <p>
-        V jezikoslovju poznamo izraz <em>Wanderwort</em> za besede,
-        ki so se širile med različnimi jeziki in jezikovnimi skupinami.
-        Takšni pojavi so posebej pogosti pri izrazih, povezanih s trgovino,
-        obrtjo, naravnimi pojavi, živalmi in kulturnimi predmeti.
-    </p>
-
-    <p>
-        Integralna teorija temu pojavu pripisuje širši pomen. Jezikovno
-        kroženje besed ni obrobna izjema, temveč ena od običajnih
-        značilnosti zgodovinskega razvoja jezikov.
-    </p>
-
-    <h3>Primerjava izrazov za uho in rog</h3>
-
-    <p>
-        Primerjava izrazov za dele telesa in živalske značilnosti
-        odpira vprašanje, kako so se besede širile med oddaljenimi
-        jezikovnimi območji. V raziskavi so zato zanimive vzporednice
-        med slovenščino, sanskrtom, gruzijščino, finščino in arabščino.
-    </p>
-
-    <p>
-        Posebej zanimivo je vprašanje, ali so nekatere glasovne in
-        pomenske povezave nastale v starejših večjezičnih okoljih,
-        v katerih so se izrazi prenašali med skupnostmi, ne da bi
-        nujno pripadali eni sami jezikovni družini.
-    </p>
-
-    <p>
-        Pri takšnih primerjavah je treba ločiti med neposredno
-        izposojo, skupno starejšo plastjo, pomenskim premikom in
-        zgolj naključno glasovno podobnostjo. Integralna teorija
-        jih obravnava kot možne sestavine širšega zgodovinskega
-        procesa.
-    </p>
-
-</section>
-
-
-<section id="rekonstrukcije">
-
-    <h2>6. Narava zgodovinskih rekonstrukcij</h2>
-
-    <div class="gold-line"></div>
-
-    <p class="lead">
-        Razumevanje prazgodovinske jezikovne zgodovine je vedno
-        povezano z interpretacijo ohranjenih podatkov.
-    </p>
-
-    <blockquote>
-        Rekonstrukcije prazgodovinskih jezikovnih stanj niso neposredna
-        opazovanja preteklosti, temveč interpretativni modeli, sestavljeni
-        iz ohranjenih jezikovnih, arheoloških, zgodovinskih in drugih podatkov.
-    </blockquote>
-
-    <p>
-        Integralna teorija razvoja jezikov izhaja iz drugačnega razumevanja
-        zgodovinskega razvoja jezikov. Namesto da bi jezikovno zgodovino
-        prvenstveno obravnavala kot zaporedje razvejanj iz skupnih
-        prednikov, jo razume kot dolgotrajen proces prepletanja
-        jezikovnih skupnosti, narečnih kontinuumov, kulturnih vplivov
-        in medsebojnega prevzemanja jezikovnih značilnosti.
-    </p>
-
-    <p>
-        Zato današnjih jezikovnih družin ne obravnava kot popolnega
-        odraza zgodovinske stvarnosti, temveč kot eno od interpretacij
-        kompleksnega procesa, katerega številne povezave so se izgubile
-        iz neposrednega zgodovinskega spomina.
-    </p>
-
-    <p>
-        Različne rekonstrukcije je treba presojati po njihovi sposobnosti,
-        da pojasnijo razpoložljive podatke. Integralna teorija pri tem
-        ponuja drugačen razlagalni okvir: v ospredje postavlja jezikovne
-        kontinuume, večplastnost, stik in dolgotrajno medsebojno
-        vplivanje jezikovnih skupnosti.
-    </p>
-
-</section>
-
 
 <div class="conclusion">
+<h3>Dve razlagi, skupni podatki</h3>
 
-    <h2>Jezikovna zgodovina kot preplet</h2>
+<p>
+Navedeni primeri kažejo, da je mogoče iste jezikovne pojave
+umestiti v različne zgodovinske modele. Razlika ni zgolj v
+poimenovanju posameznih besed ali glasovnih sprememb, temveč
+v razumevanju celotnega procesa razvoja jezikov.
+</p>
 
-    <p>
-        Posamezne besede, slovnične strukture, glasovne značilnosti
-        in krajevna imena so sledovi zgodovinskih procesov. Njihova
-        razporeditev pogosto presega današnje jezikovne in politične
-        meje.
-    </p>
+<p>
+Integralna teorija predlaga širši pogled: namesto da bi
+zgodovino jezikov razumeli predvsem kot razvejanje iz
+posameznega prajezika, jo obravnava kot dolgotrajen proces
+prepletanja jezikovnih, pomenskih in kulturnih plasti.
+</p>
 
-    <p>
-        Integralna teorija razvoja jezikov poskuša te pojave razumeti
-        kot dele širše zgodovinske mreže: mreže jezikovnih stikov,
-        kontinuitet, prepletanja in postopnega spreminjanja.
-    </p>
-
-    <p>
-        Njen cilj ni zgolj razvrščanje jezikov, temveč razumevanje
-        zgodovinskih odnosov, ki so oblikovali njihovo današnjo podobo.
-    </p>
-
+<p>
+Odločilno vprašanje je, kateri model bolje poveže razpoložljive
+podatke v smiselno in zgodovinsko prepričljivo celoto.
+</p>
 </div>
 
 </main>
 
-
 <footer>
-    <p>Integralna teorija razvoja jezikov</p>
-    <p>
-        <a href="index.html">Domov</a>
-        &nbsp; | &nbsp;
-        <a href="odprta-vprasanja.html">Odprta vprašanja</a>
-    </p>
+Integralna teorija razvoja jezikov
 </footer>
 
 </body>
